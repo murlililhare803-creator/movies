@@ -23,9 +23,9 @@ USERNAME = environ.get('USERNAME', "https://t.me/Innocent_babe_dead") # ADMIN US
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002190681742'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+K2kgCBgaat80YWQ9')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002048137136').split()]
+DATABASE URI: mongodb+srv://krishna:krishna@cluster0.ltx6m9a.mongodb.net/?appName=Cluster0
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://krishna:krishna@cluster0.ltx6m9a.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "learningbots")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
