@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     build-essential
 COPY . /app/
-RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install --upgrade pip --root-user-action=ignore \
+    && pip install -r requirements.txt --root-user-action=ignore
 EXPOSE 8080
 CMD ["python", "bot.py"]
